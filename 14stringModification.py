@@ -17,5 +17,12 @@ print(str2.center(50,"."))
 
 #count()-->This method returns the number of times the given values has occured with in the given string.
 str = "Abcdracanhsaklsacsaacsa"
-countstr = str.count("a","s")
+countstr = str.count("a")
 print(countstr)
+
+
+#endswith() - the endswith() method check if the string end with a given value return Ture or return false
+
+name = "Hello world!!!"
+print (name.endswith("!!!"))
+print (name.endswith("%"))
