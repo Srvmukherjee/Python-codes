@@ -47,3 +47,38 @@ str6 = "My name is Sourav Mukherjee I am 23 years old"
 print(str6.isalnum())
 str7 = "WelcomeToTheConsole"
 print(str7.isalnum())
+
+#isalpha()- This return true is only there is contains only A->Z, a->z if any character or number 0->9 present in the string return False.
+str1 = "Weclome"
+print(str1.isalpha())
+str2 = "Welcome27"
+print(str2.isalpha())
+str3 = "Welcome Sourav"
+print(str2.isalpha())
+
+#islower()-->Return true if and only if there are all small letter present in the string. If not return false.
+str1= "hello world"
+print(str1.islower())
+
+#isprintable()-> If the given string are printable. if not return false.
+str1= "Sourav is a electronics and Communication engineer."
+print(str1.isprintable())
+
+#isspace()--> return true if the string only contains space. Else it return false.
+str=" "
+print(str.isspace())
+str1 = "Hello world"
+print(str1.isspace())
+
+#startswith()--> the startswith() return true if the string first word starts with given value. If not return false.
+str= "Python is a programming language."
+print(str.startswith("Python"))
+print(str.startswith("python"))
+
+#swapcase()--> Convert the uppercase into lower case and vice versa.
+str="Hellow world"
+print(str.swapcase())
+
+#title()- capitalizes each letter of word within the string.
+str = "He is an engineer"
+print(str.title())
