@@ -3,9 +3,7 @@
 # AMOUNT IS TAKING HOME AFTER PLAYING THE GAME.
 
 
-import sys
 
-# Define the list of questions and answers
 questions = [
     "What is the capital of France?",
     "Which planet is known as the Red Planet?",
@@ -21,8 +19,7 @@ answers = [
     "H2O",
     "Leonardo da Vinci"
 ]
-
-# Function to display questions and get user input
+import sys
 def kbc():
     total_questions = len(questions)
     total_amount = 0
