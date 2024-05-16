@@ -19,5 +19,5 @@ print(e)
 f = n//m    #FLOOR DIVISION
 print(f)
 
-g = n**m    #Exponential
+g = n**m    #Exponential n^m
 print(g)

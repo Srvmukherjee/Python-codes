@@ -82,3 +82,4 @@ print(str.swapcase())
 #title()- capitalizes each letter of word within the string.
 str = "He is an engineer"
 print(str.title())
+

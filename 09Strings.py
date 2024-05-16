@@ -6,7 +6,8 @@
 print('He said,"I want an apple today"')
 
 
-#Multiline comment:
+#Multiline String:
 print("""lorem ipsum
-      doller sit amet,
-      was a good boy""")
+doller sit amet,
+was a good boy""")
+

@@ -12,4 +12,6 @@ while(count>0):
     print(count)
     count = count-1
 else:
-    print("Counter is zero")
+    print("Counter is 0")
+
+

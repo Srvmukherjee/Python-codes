@@ -53,3 +53,4 @@ print(res)
 Tuple1= (0,1,2,3,4,5,6,7,1,2,3,5)
 res = Tuple1.index(4)
 print(res)
+
