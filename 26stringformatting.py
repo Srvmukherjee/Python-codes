@@ -11,4 +11,10 @@ name = 'Tushar'
 age = 23
 print(f"Hello, My name is {name}, my age is {age}")
 
+
+# Example - 2.
 print(f"{2*30}")
+
+
+
+
