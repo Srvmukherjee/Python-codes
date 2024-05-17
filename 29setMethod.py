@@ -19,13 +19,31 @@
 
 # issubset(): It returns true if the all element of subset present in the main set, else it return false.
 # name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
-# name2 = {"Saptarshi","Sourin"}
 # name3 = {"saikat", "Sourin","Sandip","Pratik"}
 
 # print(name2.issubset(name1))
 # print(name3.issubset(name1))
 
-# add()- Add of two sets.
+# add()- Add of two sets. Adds the elements randomly.
+# name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
+# name1.add("Sandeep")
+# print(name1)
+
+# update(): If we want to add more than one item, simply create another set or any other iterable object.
+# This method used to add in into the existing sets.
+# name1 = {"Sourav","Dipanwita"}
+# name2 = {"Saptarshi","Sourin"}
+
+# name1.update(name2)
+# print(name1)
+
+# remove or discard:
+# name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
+# name1.discard("Sourav")
+# print(name1)
+
+# pop()- Used to remove the last item.
 name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
-name1.add("Sandeep")
+items = name1.pop()
 print(name1)
+print(items)
