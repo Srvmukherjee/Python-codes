@@ -43,7 +43,17 @@
 # print(name1)
 
 # pop()- Used to remove the last item.
+# name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
+# items = name1.pop()
+# print(name1)
+# print(items)
+
+# del()- it's not a method, its a keyword for delete the entire set.
+# name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
+# del name1
+# print(name1)
+
+# clear()- Clear the whole set and print the empty set.
 name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
-items = name1.pop()
+name1.clear()
 print(name1)
-print(items)
