@@ -30,8 +30,23 @@
 
 # print the multipication table of n
 
-a=int(input("Enter number"))
-for i in range(1,11):
-        print(i*a)
-        i+=1
+# a=int(input("Enter number"))
+# for i in range(1,11):
+#         print(i*a)
+#         i+=1
         
+
+list1={1,2,3,4,5,6,7,8,9,91,100}
+for i in list1:
+    print(i)
+
+# Seach a nummber x in the tuple.
+    
+tuple1 = (1, 2, 3, 4, 5, 6, 7, 8, 89, 0, 100)
+a = int(input("Enter number to find: "))
+
+if a in tuple1:
+    index = tuple1.index(a)
+    print(f"{a} found in the tuple at index {index}")
+else:
+    print("Not found")
