@@ -52,3 +52,4 @@ print(namelist)
 namelist = {'name':'Sourav','Age':23,'Eligible':True}
 del namelist['Age']
 print(namelist)
+

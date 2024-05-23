@@ -46,3 +46,14 @@ print(name3)
 
 name1.symmetric_difference_update(name2)
 print(name1)
+
+# difference() and difference_update():
+name1 = {"Sourav","dipanwita","Saptarshi","Shounak"}
+name2 = {"Sourav", "Sourin","Sandip","Pratik"}
+
+name3 = name1.difference(name2)
+print(name3)
+
+name1.difference_update(name2)
+print(name1)
+

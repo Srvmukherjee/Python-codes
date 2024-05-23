@@ -23,16 +23,19 @@
 #     print("Negetive")
 
 #write a program which are capable for print good morning, good afternoon or good evening.
-import time
+# import time
 
-current_time = time.strftime('%H:%M:%S')
-print(current_time)
+# current_time = time.strftime('%H:%M:%S')
+# print(current_time)
 
-hour = int(time.strftime('%H'))  # Convert hour to integer for comparison
+# hour = int(time.strftime('%H'))  # Convert hour to integer for comparison
 
-if 12 <= hour < 17:
-    print("Good afternoon")
-elif 1 < hour < 12:
-    print("Good Morning")
-else:
-    print("Good evening")
+# if 12 <= hour < 17:
+#     print("Good afternoon")
+# elif 1 < hour < 12:
+#     print("Good Morning")
+# else:
+#     print("Good evening")
+
+
+        

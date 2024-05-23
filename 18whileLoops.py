@@ -40,7 +40,7 @@ list1={1,2,3,4,5,6,7,8,9,91,100}
 for i in list1:
     print(i)
 
-# Seach a nummber x in the tuple.
+# Seach a nummber x in the tuple1 = (1, 2, 3, 4, 5, 6, 7, 8, 89, 0, 100).
     
 tuple1 = (1, 2, 3, 4, 5, 6, 7, 8, 89, 0, 100)
 a = int(input("Enter number to find: "))
@@ -50,3 +50,4 @@ if a in tuple1:
     print(f"{a} found in the tuple at index {index}")
 else:
     print("Not found")
+

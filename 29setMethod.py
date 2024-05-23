@@ -54,6 +54,7 @@
 # print(name1)
 
 # clear()- Clear the whole set and print the empty set.
-name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
-name1.clear()
-print(name1)
+# name1 = {"Sourav","Dipanwita","Saptarshi","Sourin"}
+# name1.clear()
+# print(name1)
+
