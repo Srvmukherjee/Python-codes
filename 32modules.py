@@ -19,15 +19,24 @@ print(calendar.isleap(2016))
 
 # make my own module:
 
+# method 1:
 import function1
 
 area1 = function1.area(6,7)
 print(area1)
 
+# # method 2:
+# import function1 as f
 
-import function1 as f
-
-area1 = f.area(6,7)
-print(area1)
+# area1 = f.area(6,7)
+# print(area1)
 
 
+# If the function store in the another directory
+# then write as if the function stored in srv1 file
+# then write as ------> import srv1.function1 as f
+
+
+# if the function store in unknown path, then write:
+# import sys
+# sys.path.append("C:\code")# "C:\code"- Is the system file directory.
