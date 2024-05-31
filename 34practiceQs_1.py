@@ -1,75 +1,39 @@
-# You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
+# result = [ ]    
+# for i in range(x+1):
+#     for j in range(y+1):
+#         for z in range(z+1):
+                
+#                 if i+j+z != n:
+#                      result.append([i,j,z])
+                     
+# print(result)
 
-# Evaluate the expression. Return an integer that represents the value of the expression.
+# x = int(input("Enter x: "))
+# y = int(input("Enter y: "))
+# z = int(input("Enter z: "))
+# n = int(input("Enter n: "))
 
-# Note that:
+# # Using list comprehension to generate the desired list of coordinates
+# result = [[i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i + j + k != n]
 
-# The valid operators are '+', '-', '*', and '/'.
-# Each operand may be an integer or another expression.
-# The division between two integers always truncates toward zero.
-# There will not be any division by zero.
-# The input represents a valid arithmetic expression in a reverse polish notation.
-# The answer and all the intermediate calculations can be represented in a 32-bit integer.
- 
+# print(result)
+import calendar
 
-# Example 1:
+# Read the input date
+month, day, year = map(int, input().split())
 
-# Input: tokens = ["2","1","+","3","*"]
-# Output: 9
-# Explanation: ((2 + 1) * 3) = 9
-# Example 2:
+# Get the weekday as an integer (0=Monday, 1=Tuesday, ..., 6=Sunday)
+weekday_int = calendar.weekday(year, month, day)
 
-# Input: tokens = ["4","13","5","/","+"]
-# Output: 6
-# Explanation: (4 + (13 / 5)) = 6
-# Example 3:
+# List of days in uppercase corresponding to the integers returned by calendar.weekday
+days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 
-# Input: tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
-# Output: 22
-# Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
-# = ((10 * (6 / (12 * -11))) + 17) + 5
-# = ((10 * (6 / -132)) + 17) + 5
-# = ((10 * 0) + 17) + 5
-# = (0 + 17) + 5
-# = 17 + 5
-# = 22
- 
+# Get the corresponding day name
+day_of_week = days[weekday_int]
 
-# Constraints:
-
-# 1 <= tokens.length <= 104
-# tokens[i] is either an operator: "+", "-", "*", or "/", or an integer in the range [-200, 200].
-
-def evalRPN(tokens):
-    stack = []
-
-    for token in tokens:
-        if token not in "+-*/":
-            stack.append(int(token))
-        else:
-            b = stack.pop()
-            a = stack.pop()
-            if token == '+':
-                stack.append(a + b)
-            elif token == '-':
-                stack.append(a - b)
-            elif token == '*':
-                stack.append(a * b)
-            elif token == '/':
-                # Note: int() in Python 3 does floor division for negative numbers
-                # to truncate towards zero use int(a / b)
-                stack.append(int(a / b))
-    
-    return stack[0]
-
-
-
-
-
-
-
-
-tokens1 = {}
-tokens1 = input()
-tokens = tokens1.split(",")
-print(evalRPN(tokens))
+# Print the day of the week
+print(day_of_week)

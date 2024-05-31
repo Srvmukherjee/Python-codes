@@ -1,10 +1,10 @@
 # Math module
-import math
+# import math
 
-print(math.sqrt(16))
-print(math.pow(2,5))
-print(dir(math))
-math.log10(100)
+# print(math.sqrt(16))
+# print(math.pow(2,5))
+# print(dir(math))
+# math.log10(100)
 
 '''4.0
 32.0
@@ -20,10 +20,10 @@ print(calendar.isleap(2016))
 # make my own module:
 
 # method 1:
-import function1
+# import function1
 
-area1 = function1.area(6,7)
-print(area1)
+# area1 = function1.area(6,7)
+# print(area1)
 
 # # method 2:
 # import function1 as f
